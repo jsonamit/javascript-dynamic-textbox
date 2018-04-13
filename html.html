@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<div></div>
+<script>
+
+for(var i=0;i<=3;i++)
+{
+var row= document.createElement("tr");
+for(var y=0;y<4;y++)
+{
+var input = document.createElement("input");
+input.setAttribute("type","text");
+id=i.toString()+y.toString();
+input.setAttribute("id",id);
+
+input.style.textAlign = "center";
+row.appendChild(input);
+document.body.append(row);
+}
+
+}
+var x = document.getElementById("00");
+var y = document.getElementById("01");
+var z = document.getElementById("02");
+var a = document.getElementById("03");
+var ss=x.getAttribute("id");
+var s=y.getAttribute("id");
+var t=z.getAttribute("id");
+var u=a.getAttribute("id");
+x.setAttribute("disabled","true");
+y.setAttribute("disabled","true");
+z.setAttribute("disabled","true");
+a.setAttribute("disabled","true");
+x.setAttribute("value","Name");
+y.setAttribute("value","Age");
+z.setAttribute("value","Address");
+a.setAttribute("value","City");
+</script>
+</body>
+</html>
